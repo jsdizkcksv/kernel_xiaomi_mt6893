@@ -30,11 +30,11 @@
 #endif
 
 #ifndef AUD_LOG_W
-#define AUD_LOG_W pr_debug
+#define AUD_LOG_W pr_info
 #endif
 
 #ifndef AUD_LOG_E
-#define AUD_LOG_E pr_err
+#define AUD_LOG_E pr_notice
 #endif
 
 #endif /* end of AUDIO_LOG_H */

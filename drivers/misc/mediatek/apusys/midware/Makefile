@@ -26,12 +26,6 @@ PDIR = $(MTK_PLATFORM)
 endif
 
 UTIL_DIR = ../util
-subdir-ccflags-y += -Wno-error
-ccflags-y += \
-	        -Wno-unused-variable \
-	         -Wno-unused-function \
-	         -Wno-visibility
-
 
 ccflags-y += -I$(srctree)/drivers/staging/android/ion
 ccflags-y += -I$(srctree)/drivers/misc/mediatek/m4u/$(PDIR)/

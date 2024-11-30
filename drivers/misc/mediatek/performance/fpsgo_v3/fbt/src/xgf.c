@@ -1987,7 +1987,7 @@ static int xgf_enter_est_runtime(int rpid, struct xgf_render *render,
 {
 	int ret;
 
-	//WARN_ON(!xgf_est_runtime_fp);
+	WARN_ON(!xgf_est_runtime_fp);
 
 	if (xgf_est_runtime_fp)
 		ret = xgf_est_runtime_fp(rpid, render, runtime, ts);
@@ -2156,7 +2156,7 @@ static unsigned long long xgf_sqrt(unsigned long long x)
 	if (x <= 1)
 		return x;
 
-	m = 1ULL << (__fls(x) & ~1ULL);
+	m = 1UL << (__fls(x) & ~1UL);
 	while (m != 0) {
 		b = y + m;
 		y >>= 1;
